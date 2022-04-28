@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+
+<!-- bloque 01 -->
+<div class="wrapper">
+
+
+
+
+
+  <!-- Navbar bloque 02-->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="Evaluacion.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+    
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        
+      </li>
+	  
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+       
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+	  
+	  <!-- Menu derecho -->
+	     <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Usuario
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                       Cerrar Sesión
+                                    </a>
+                              </div>
+                            </li>                
+
+           </ul>
+  </nav>
+  <!-- /.navbar -->
+  
+  
+  
+  
+  
+  
+  
+<!-- Bloque 03 MENU-->
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="Evaluacion.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Prueba Técnica</span>
+    </a>
+
+    <!-- Sidebar  -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Darwin López Sandoya</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+               Ejercicios
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="biciesto.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Biciesto</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tabla.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tabla con dimensiones</p>
+                </a>
+              </li>
+			   <li class="nav-item">
+                <a href="arreglo1.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Un Arreglo</p>
+                </a>
+              </li>
+			   <li class="nav-item">
+                <a href="arreglo2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dos Arreglos</p>
+                </a>
+              </li>
+			    <li class="nav-item">
+                <a href="api.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Consultar API</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  
+  <!-- Bloque 04 CONTENIDO -->
+  
+  <!-- Content Wrapper. Contains page content Bloque 04 CONTENIDO -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Arreglo 1</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              &nbsp;
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+               <div class="form-group">
+
+
+				<div class="form-group row justify-content-center">
+					Generar Arreglo con 20 numeros aleatorios y ordenar
+					
+				</div>
+				
+				<div class="form-group row justify-content-center">
+					<b>Resultado:</b>
+					<div class="col-md-4" id="result">
+					
+					</div>
+				</div>
+			  <div class="form-group row justify-content-center">
+					
+					<div class="col-md-4">
+					<button type="button" id="generar" class="btn btn-success">Generar</button>
+					</div>
+				</div>
+			</div>
+				
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+
+</div>
+<!-- ./wrapper -->
+
+<!-- BLOQUE 05- PIE -->
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2022 <a href="#">Ejercicios</a>.</strong> 
+  </footer>
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script>
+$("#generar").click(function() {
+  
+
+$("#result").html('');
+
+var j, i, a,z, tmp;
+const arreglo = [];
+var xlista='<ul>';
+for(z=0;z<20;z++){
+var xaleatorio= Math.round(Math.random() * (100 - 1) + 1);
+arreglo[z]=xaleatorio;
+}
+ var length = arreglo.length;  
+    for (var i = 0; i < length; i++) { 
+          for (var j = 0; j < (length - i - 1); j++) { 
+                   if(arreglo[j] > arreglo[j+1]) {
+                   var tmp = arreglo[j]; 
+                arreglo[j] = arreglo[j+1]; 
+                arreglo[j+1] = tmp; 
+            }
+			
+        }    	
+    }
+	for(var a = 0; a < length; a++){
+	xlista=xlista+'<li>'+arreglo[a]+'</li>';
+	}
+	
+	
+var xlista=xlista+'</ul>';
+$("#result").html(xlista);
+
+});
+</script>
+</body>
+</html>
